@@ -56,3 +56,7 @@ func (ps PositionedScanner) Position() int64 {
 func (ps PositionedScanner) Text() string {
 	return ps.scanner.Text()
 }
+
+func (ps PositionedScanner) Err() error {
+	return ps.scanner.Err()
+}
